@@ -1,0 +1,52 @@
+{
+  "groups": [
+    {
+      "name": "redis",
+      "type": "com.oa4.config.RedisConfig",
+      "sourceType": "com.oa4.config.RedisConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "redis.database",
+      "type": "java.lang.Integer",
+      "sourceType": "com.oa4.config.RedisConfig"
+    },
+    {
+      "name": "redis.host",
+      "type": "java.lang.String",
+      "sourceType": "com.oa4.config.RedisConfig"
+    },
+    {
+      "name": "redis.password",
+      "type": "java.lang.String",
+      "sourceType": "com.oa4.config.RedisConfig"
+    },
+    {
+      "name": "redis.pool-max-idle",
+      "type": "java.lang.Integer",
+      "sourceType": "com.oa4.config.RedisConfig"
+    },
+    {
+      "name": "redis.pool-max-total",
+      "type": "java.lang.Integer",
+      "sourceType": "com.oa4.config.RedisConfig"
+    },
+    {
+      "name": "redis.pool-max-wait",
+      "type": "java.lang.Integer",
+      "sourceType": "com.oa4.config.RedisConfig"
+    },
+    {
+      "name": "redis.port",
+      "type": "java.lang.Integer",
+      "sourceType": "com.oa4.config.RedisConfig"
+    },
+    {
+      "name": "redis.timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "com.oa4.config.RedisConfig"
+    }
+  ],
+  "hints": []
+}

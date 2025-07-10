@@ -1,0 +1,45 @@
+spring:
+  application:
+    name: OA-4
+  thymeleaf:
+    suffix: .html
+    prefix: classpath:/templates/
+    cache: false
+    check-template-location: true
+    mode: HTML
+    enabled: true
+    encoding: UTF-8
+    check-template: true
+    servlet:
+      content-type: text/html;charset=utf-8
+    excluded-view-names:
+  datasource:
+    name: defaultDataSource
+    url: jdbc:mysql://localhost:3306/day?useSSL=false&useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+    username: root
+    password: 71421712abc@
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      initial-size: 20
+      min-idle: 10
+      max-active: 100
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+mybatis:
+  mapper-locations: classpath:mappers/*xml
+  type-aliases-package: com.oa4.pojo
+server:
+  port: 8081
+
+# Redis
+redis:
+  host: 127.0.0.1
+  port: 6379
+  password:
+  maxTotal: 1000
+  maxIdle: 30
+  maxWait: 60
+  testOnBorrow: true
